@@ -132,7 +132,10 @@ def ex_3_1():
     Return the result.
     """
     # TODO: Write your code here
-    raise NotImplementedError("Exercise 3.1 not implemented")
+    result = 481
+    for _ in range(10):
+        result += 6
+    return result
 
 
 def ex_3_2():
@@ -142,7 +145,10 @@ def ex_3_2():
     Return the result.
     """
     # TODO: Write your code here
-    raise NotImplementedError("Exercise 3.2 not implemented")
+    result = 551
+    for _ in range(10):
+        result -= 8
+    return result
 
 
 def ex_3_3():
@@ -152,7 +158,11 @@ def ex_3_3():
     22..45, separated by commas. No extra comma at the end.
     """
     # TODO: Write your code here
-    raise NotImplementedError("Exercise 3.3 not implemented")
+    even_numbers = []
+    for i in range(22, 45):
+        if i % 2 == 0:
+            even_numbers.append(str(i))
+    return ", ".join(even_numbers)
 
 
 def ex_4_1():
@@ -162,7 +172,12 @@ def ex_4_1():
     Return the number of steps.
     """
     # TODO: Write your code here
-    raise NotImplementedError("Exercise 4.1 not implemented")
+    n = 10
+    steps = 0
+    while n < 481:
+        n += 6
+        steps += 1
+    return steps
 
 
 def ex_4_2():
@@ -172,7 +187,12 @@ def ex_4_2():
     Return the number of steps.
     """
     # TODO: Write your code here
-    raise NotImplementedError("Exercise 4.2 not implemented")
+    n = 551
+    steps = 0
+    while n > 0:
+        n -= 8
+        steps += 1
+    return steps
 
 
 def ex_4_3():
@@ -182,7 +202,14 @@ def ex_4_3():
     between 28..63 that are divisible by 5 or 7.
     """
     # TODO: Write your code here
-    raise NotImplementedError("Exercise 4.3 not implemented")
+    n = 28
+    nums = []
+    while n <= 63:
+        if n % 5 == 0 or n % 7 == 0:
+            nums.append(str(n))
+        n += 1
+    return ", ".join(nums)
+
 
 
 def _run_and_print(fn, label):
